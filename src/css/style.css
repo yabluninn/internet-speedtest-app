@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap");
+
+:root {
+  --color: rgb(251, 191, 96);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: var(--color);
+}
+
+button:hover {
+  cursor: pointer;
+}
+select:hover {
+  cursor: pointer;
+}
+
+#hidden {
+  display: none;
+}
+.app {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.app-images {
+  position: absolute;
+  background-color: white;
+  padding: 15px;
+  border-radius: 25%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.app-img-one {
+  top: 10%;
+  left: 4%;
+  transform: rotate(-30deg);
+}
+.app-img-two {
+  bottom: 10%;
+  right: 5%;
+  transform: rotate(30deg);
+}
+.container {
+  width: 30%;
+  height: 80%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+.header {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 20px;
+}
+.header-sublabel {
+  font-size: 18px;
+  width: 90%;
+  text-align: center;
+  margin: 0;
+  margin-top: 5px;
+  color: rgb(98, 98, 98);
+}
+.speed-value-block {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  color: rgb(246, 158, 16);
+  border: 6px solid var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.set-tests-count-block {
+  width: 30%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.stc-label {
+  font-size: 20px;
+  margin: 0;
+}
+.tests-count-input-box {
+  width: 100%;
+  height: 45px;
+  border: 1px solid rgb(167, 167, 167);
+  border-radius: 7px;
+  padding-left: 5px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.tests-count-input-box img {
+  width: 30px;
+  height: 30px;
+}
+.tests-count-input {
+  border: 0;
+  width: 86%;
+  font-size: 23px;
+  font-weight: 600;
+  margin-left: 7px;
+}
+.tests-count-input::placeholder {
+  font-size: 19px;
+  font-weight: normal;
+}
+.tests-count-input:focus {
+  outline: none;
+}
+.stc-sublabel {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 16px;
+  color: rgb(146, 146, 146);
+}
+.buttons-block {
+  width: 70%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.check-btn {
+  width: 75%;
+  height: 50px;
+  border-radius: 7px;
+  border: 0;
+  background-color: rgb(248, 176, 59);
+  color: white;
+  font-size: 23px;
+  font-weight: bold;
+}
+.reset-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 7px;
+  border: 0;
+  background-color: rgb(239, 19, 19);
+  color: white;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.speed-values-container {
+  width: 25%;
+  height: 45%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.sv-header {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 15px;
+}
+.sv-list {
+  width: 90%;
+  overflow-y: auto;
+  height: 80%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5px;
+}
+.sv-item {
+  width: 100%;
+  height: 35px;
+  border-radius: 7px;
+  background-color: var(--color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.sv-item-name {
+  margin-left: 10px;
+  font-size: 20px;
+}
+.sv-item-value {
+  margin-right: 10px;
+  font-size: 23px;
+  font-weight: bold;
+}

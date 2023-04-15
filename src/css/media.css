@@ -1,0 +1,42 @@
+@media screen and (max-width: 600px) {
+  html,
+  body {
+    overflow-y: auto;
+  }
+  body {
+    position: relative;
+  }
+  .app {
+    flex-direction: column;
+  }
+  .container {
+    margin-top: 70px;
+    width: 95%;
+    height: 80%;
+    box-sizing: content-box;
+  }
+  .buttons-block {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .set-tests-count-block {
+    width: 60%;
+  }
+  .speed-values-container {
+    width: 95%;
+    height: 45%;
+    margin-top: 15px;
+    margin-left: 0;
+    box-sizing: content-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .sv-list {
+    margin-bottom: 10px;
+    overflow-y: auto;
+    height: 140px;
+  }
+  .app-images {
+    display: none;
+  }
+}
