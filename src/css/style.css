@@ -86,7 +86,7 @@ select:hover {
   margin-top: 40px;
 }
 .set-tests-count-block {
-  width: 30%;
+  width: 38%;
   height: fit-content;
   display: flex;
   justify-content: center;
@@ -117,7 +117,7 @@ select:hover {
 }
 .tests-count-input {
   border: 0;
-  width: 86%;
+  width: 45%;
   font-size: 23px;
   font-weight: 600;
   margin-left: 7px;
@@ -128,6 +128,13 @@ select:hover {
 }
 .tests-count-input:focus {
   outline: none;
+}
+.clear-tests-count-input-btn {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background-color: transparent;
+  font-size: 20px;
 }
 .stc-sublabel {
   margin: 0;

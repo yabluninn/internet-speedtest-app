@@ -12,6 +12,9 @@ let randomImageLink = "https://source.unsplash.com/random?topics=nature";
 const speedValueText = document.querySelector(".speed-value-block");
 const checkButton = document.querySelector(".check-btn");
 const resetButton = document.querySelector(".reset-btn");
+const clearTestsCountInputButton = document.querySelector(
+  ".clear-tests-count-input-btn"
+);
 
 const testsCountInput = document.querySelector(".tests-count-input");
 const speedValueTestsList = document.querySelector(".sv-list");
@@ -109,3 +112,18 @@ function reset(timer) {
   speedValueText.style.color = "rgb(246, 158, 16)";
   testsCountInput.value = "";
 }
+
+testsCountInput.oninput = function () {
+  if (testsCountInput.value != "" && testsCountInput.value != " ") {
+    clearTestsCountInputButton.style.scale = "1";
+  } else {
+    clearTestsCountInputButton.style.scale = "0";
+  }
+};
+
+function clearTestsCountInput() {
+  testsCountInput.value = "";
+  clearTestsCountInputButton.style.scale = "0";
+}
+
+clearTestsCountInputButton.addEventListener("click", clearTestsCountInput);
